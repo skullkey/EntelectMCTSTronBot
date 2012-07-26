@@ -1,0 +1,32 @@
+error in MCTSPlayer! null
+|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|
+|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a| | |a|a|a|
+|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a| | |a|a|a|
+|a|a|a|a|a|a|a|a| |a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a| | | |a|a|
+|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a| | | | |
+|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|a|b|b|b|b|b|b|b|a|a|a|a|a| | |
+|a|a|a|a|a|a|a|A|a|a| | | | | | |b|b|B|b|b|b|b|a|a|a|a|a| | |
+|a|a|a|a|a|a|a|a|a| | | | |b|b|b|b|b| | | | | | | |a|a|a| | |
+|a|a|a|a|a|a|a|a| | | | | |b|b|b|b|b|b|b|b|b|b| | | |a|a| | |
+|a|a|a|a|a|a| | | | |b|b|b|b|b|b|b|b|b|b|b|b|b| | | |a|a| | |
+| | | | | | | | | | |b|b|b|b|b|b|b|b|b|b|b|b|b| | | |a|a| | |
+| | | | | | | | | | |b|b|b|b|b|b|b|b|b|b|b|b|b| | | |a|a| | |
+|a|a|a|a|a|a|a|a| | |b|b|b|b|b|b|b|b|b|b|b|b|b| | | | |a|a|a|
+|a|a|a|a|a|a|a|a| | |b|b|b|b|b|b|b|b|b|b|b|b|b| | | | |a|a|a|
+|a|a|a|a|a|a|a|a| | | | | | |b|b|b|b|b|b|b|b|b| | | | |a|a|a|
+|a|a|a|a|a|a|a|a| | | | | | | |b|b|b|b|b|b|b|b|b| | | | |a|a|
+|a|a|a|a|a|a|a|a| | | | | | | | | |b|b|b|b|b|b|b| | | | |a|a|
+| | | | |a|a|a|a| | | | | | | | | | |b|b|b|b|b|b| | | | | | |
+| | | | | | | | | | | | | | | | | | |b|b|b|b|b|b| | | | | | |
+| | | | | | | | | | | | | | | | | | |b|b|b|b|b|b| | | | | | |
+| | | | | | | | | | | | | | | | |b|b|b|b|b|b|b|b| | | | | | |
+|b|b|b|b|b|b|b|b|b|b|b|b| | |b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|
+|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|
+|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|
+|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|b|
+| | | | | | | | | | | | | | | | | |b|b|b|b|b|b|b|b| | | | | |
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+

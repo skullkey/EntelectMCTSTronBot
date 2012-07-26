@@ -17,7 +17,7 @@ import nl.unimaas.games.tron.player.Player;
 
 public class Game {
 	public final static int PLAYER_COUNT = 2;
-	public final static long EXTRA_TIME = 1000;
+	public final static long EXTRA_TIME = 500;
 	private Thread thread;
 	public final Board board;
 	public final Player[] players;

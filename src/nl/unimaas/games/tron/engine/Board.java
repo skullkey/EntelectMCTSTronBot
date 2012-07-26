@@ -850,7 +850,8 @@ public class Board implements Cloneable, Serializable {
 
 	}
 
-	public void toEntelectFile(String file, boolean crossover) throws IOException {
+	public void toEntelectFile(String file, boolean crossover)
+			throws IOException {
 		Writer output = new BufferedWriter(new FileWriter(file));
 		try {
 			for (int x = 0; x < getWidth(); x++) {
@@ -862,19 +863,17 @@ public class Board implements Cloneable, Serializable {
 						s += "Clear";
 						break;
 					case 0:
-						
+
 						if (getPlayerPosition(0) == Board.xyToPos(x, y)) {
-							
-							s += (crossover ? "Opponent" : "You"); // cross over so we don't need game
-												// server
+
+							s += (crossover ? "Opponent" : "You");
 						} else {
 							s += (crossover ? "OpponentWall" : "YourWall");
 						}
 						break;
 					case 1:
 						if (getPlayerPosition(1) == Board.xyToPos(x, y)) {
-							s += (crossover ? "You" : "Opponent"); // cross over so we don't need game
-										// server
+							s += (crossover ? "You" : "Opponent");
 						} else {
 							s += (crossover ? "YourWall" : "OpponentWall");
 						}
@@ -895,4 +894,29 @@ public class Board implements Cloneable, Serializable {
 		}
 	}
 
+	public String toString(String player1, String player2) {
+		StringBuilder blr = new StringBuilder();
+		for (int j = 0; j < getHeight(); j++) {
+			blr.append("|");
+			for (int i = 0; i < getWidth(); i++) {
+
+				if (getField(i, j) == EMPTY_FIELD) {
+					blr.append(" ");
+				} else {
+					if (getPlayerPosition(0) == Board.xyToPos(i, j)) {
+						blr.append(player1.toUpperCase());
+					} else if (getPlayerPosition(1) == Board.xyToPos(i, j)) {
+						blr.append(player2.toUpperCase());
+					} else if (getField(i, j) == 0) {
+						blr.append(player1);
+					} else if (getField(i, j) == 1) {
+						blr.append(player2);
+					}
+				}
+				blr.append("|");
+			}
+			blr.append("\n");
+		}
+		return blr.toString();
+	}
 }

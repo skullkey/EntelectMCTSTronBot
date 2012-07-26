@@ -28,7 +28,7 @@ public class MCTSPlayer extends Player {
 	private final static boolean GFX_DEBUG = false;
 	private final static double SIM_WIN = 1, SIM_DRAW = 0, SIM_LOSS = -1;
 	private static final int UNTESTED = -3;
-	private long MAX_TURN_TIME = 500;
+	private long MAX_TURN_TIME = 1000;
 	private int turn = 0;
 	private ArrayList<BufferedImage> debugImgs;
 	

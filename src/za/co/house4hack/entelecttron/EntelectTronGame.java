@@ -16,7 +16,7 @@ public class EntelectTronGame {
 
 	private final static Logger logger=Logger.getLogger("Tron");;
 
-	public static void runGame(String boardPath, boolean crossOver) throws IOException {
+	public static void runGame(String boardPath, boolean crossOver, String player1, String player2) throws IOException {
 		Board board;
 		try {
 			//board = Board.fromFile(boardPath);
@@ -26,16 +26,16 @@ public class EntelectTronGame {
 			return;
 		}
 		ArrayList<Player> players = new ArrayList<Player>();
-		Player p = Player.fromType("MCTSPlayer", "You", players.size(),
+		Player p = Player.fromType("UCTPlayer", "You", players.size(),
 				Color.RED);
 		players.add(p);
-		p = Player.fromType("MCTSPlayer", "Other", players.size(), Color.BLUE);
+		p = Player.fromType("UCTPlayer", "Other", players.size(), Color.BLUE);
 		players.add(p);
 		Game game = new Game(players.toArray(new Player[players.size()]), board);
 		
 		logger.setUseParentHandlers(false);
 		ConsoleHandler consoleHandler = new ConsoleHandler();
-		consoleHandler.setLevel(java.util.logging.Level.FINEST);
+		consoleHandler.setLevel(java.util.logging.Level.INFO);
 		logger.addHandler(consoleHandler);
 		logger.setLevel(Level.ALL);
 		
@@ -46,13 +46,7 @@ public class EntelectTronGame {
 		
 		board.toEntelectFile(boardPath, crossOver);
 		
-		for(int j=0; j<board.getHeight(); j++){
-			for(int i=0; i<board.getWidth(); i++){
-				System.out.print(board.getField(i, j));
-			}
-			System.out.println("");
-		}
-		
+		System.out.println(board.toString(player1,player2));
 		System.exit(0);
 		
 
@@ -61,12 +55,16 @@ public class EntelectTronGame {
 	public static void main(String[] args) throws IOException {
 		boolean crossover = false;
 		String path=null;
-		if (args.length == 2) {
+		String player1 = "a";
+		String player2 = "b";
+		if (args.length == 4) {
 			crossover = args[1].equalsIgnoreCase("crossover");
+			player1 = args[2];
+			player2 = args[3];
 		}
 		if (args.length >= 1) {
 			path = args[0];
-			runGame(path, crossover);
+			runGame(path, crossover, player1, player2);
 		}
 
 
